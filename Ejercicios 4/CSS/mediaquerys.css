@@ -1,0 +1,32 @@
+
+body{
+	background-color: lightblue;
+}
+li{
+	display: inline;
+}
+li>a{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	background-color: white;
+}
+li>a:hover{
+	background-color: lightgray;
+}
+
+@media only screen and (max-width: 1024px) {
+	.desp1{
+		display: none;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.desp2{
+		display: none;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.desp3{
+		display: none;
+	}
+}
