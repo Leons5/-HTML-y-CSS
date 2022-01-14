@@ -1,0 +1,74 @@
+/* General */
+
+html, body{
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+	background-color: lightblue;
+}
+li{
+	display: inline;
+}
+li>a{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	background-color: white;
+}
+li>a:hover{
+	background-color: lightgray;
+}
+.marca{
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	font-size: 50px;
+	transform: rotate(45deg);
+	display: none;
+}
+.separasao{
+	display: none;
+}
+
+
+/* Cambio del menú cuando la pantalla se hace pequeña */
+
+@media screen and (max-width: 900px) {
+	.menu{
+		float: left;
+		border: 5px green solid;
+		height: 100%;
+	}
+	li{
+	display: block;
+	}
+	li>a{
+		margin: 10px;
+	}
+	.separasao{
+		display: inline;
+	}
+	.contenido{
+		border: 5px blue solid;
+		height: 100%;
+	}
+}
+
+
+/* Página para imprimir */
+
+@media print {
+	body{
+	background-color: white;
+	}
+	.marca{
+		display: inline;
+		color: rgba(0, 0, 0, 0.3);
+	}
+	.menu{
+		display: none;
+	}
+}
